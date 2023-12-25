@@ -1,0 +1,311 @@
+body {
+   background-color: rgb(56, 124, 189);
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.text_weather {
+   color: rgb(255, 255, 255);
+   font-weight: 700;
+   font-size: 30px;
+   text-transform: uppercase;
+}
+
+.head_in {
+   display: flex;
+   margin: 10px 20px;
+   justify-content: center;
+   gap: 240px;
+   padding: 15px 0px;
+}
+
+.navbar {
+   padding: 10px 0px;
+   display: flex;
+   justify-content: center;
+   background-color: rgb(121, 163, 205);
+   padding-right: 750px;
+}
+
+.items_to_select {
+   display: flex;
+}
+
+.items_to_select a {
+   font-size: 20px;
+   color: white;
+   text-decoration: none;
+   padding: 8px 25px;
+}
+
+#input_city {
+   position: absolute;
+   padding: 3px;
+   border-radius: 5px;
+   padding: 5px;
+   font-size: 20px;
+}
+
+.search div {
+   margin-left: 220px;
+   filter: grayscale(1);
+}
+
+.search div:hover {
+   cursor: pointer;
+}
+
+.box_main_elem {
+   display: flex;
+   justify-content: center;
+}
+
+.main_elem {
+   width: 1000px;
+   background-color: rgb(121, 163, 205);
+   padding: 15px;
+   margin: 25px 0px;
+   border-radius: 5px;
+}
+
+.main_elem_5day {
+   width: 1032px;
+   margin: 20px 0px;
+}
+
+.box_elem1 {
+   display: flex;
+   justify-content: space-between;
+}
+
+.box_elem2 {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.block_color {
+   color: rgb(255, 255, 255);
+   font-size: 14px;
+   font-weight: 700;
+   text-transform: uppercase;
+   font-size: 20px;
+}
+
+#curent_time {
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.box_elem2_in {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px
+}
+
+.box_elem2_in:first-child {
+   gap: 0px
+}
+
+.box_elem2_in img {
+   width: 70px;
+}
+
+#real_temp {
+   font-size: 40px;
+}
+
+#feel_temp {
+   font-size: 16px;
+}
+
+.grid-container {
+   padding: 15px 15px 5px 15px;
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   grid-gap: 20px;
+}
+
+.grid-item {
+   color: white;
+   text-align: center;
+   font-size: 18px;
+}
+
+.grid-container_1 {
+   padding: 15px 15px 5px 15px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 12px;
+}
+
+.grid-item_1 {
+   padding: 10px 30px 5px 30px;
+   background-color: rgb(159, 198, 235);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 5px;
+}
+
+#weather_Praha_temp,
+#weather_Paris_temp,
+#weather_Brno_temp,
+#weather_Nice_temp {
+   font-size: 20px;
+}
+
+.name_city {
+   width: 250px;
+   font-size: 20px;
+}
+
+.grid-item_1 img {
+   width: 45px;
+}
+
+#main_elem_eror {
+   width: 1000px;
+   background-color: rgb(56, 124, 189);
+   padding: 25px;
+   margin: 10px 0px;
+   border-radius: 5px;
+   display: none;
+}
+
+.not_found {
+   color: rgb(186, 186, 186);
+   text-align: center;
+   font-size: 100px;
+   font-family: 700;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: rgb(78, 78, 78);
+}
+
+.not_found_text {
+   color: rgb(143, 201, 255);
+   text-align: center;
+   font-size: 40px;
+   font-family: 700;
+}
+
+#not_found_input {
+   color: rgb(8, 0, 118);
+}
+
+.tabs__block {
+   display: none;
+}
+
+.tabs__block:target {
+   display: block;
+}
+
+.days5_block {
+   display: flex;
+   gap: 10px;
+}
+
+.days5_item {
+   background-color: rgb(121, 163, 205);
+   width: 25%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   padding: 25px 20px 25px 20px;
+   border-radius: 5px;
+}
+
+.weather_day {
+   color: rgb(66, 66, 66);
+   font-size: 24px;
+}
+
+.temp_day {
+   font-size: 40px;
+}
+
+.icon_day {
+   width: 100px;
+}
+
+.month_day {
+   color: rgb(66, 66, 66);
+}
+
+.weekday {
+   color: rgb(0, 116, 116);
+   font-size: 30px;
+   font-weight: 700;
+}
+
+.button img {
+   width: 25px;
+   margin-top: 5px;
+}
+
+#speed,
+#gust,
+#weather_icon_elem2 {
+   font-size: 20px;
+}
+
+#weather_icon_elem2 {
+   margin-bottom: 10px;
+}
+
+.not_found img {
+   width: 800px;
+   border-radius: 25px;
+}
+
+header {
+   margin: -10px;
+   margin-bottom: 10px;
+}
+
+#gust,
+#speed,
+#feel_temp,
+#real_temp,
+#weather_icon_elem2 {
+   color: white;
+}
+
+#weather_Praha_temp,
+#weather_Paris_temp,
+#weather_Brno_temp,
+#weather_Nice_temp,
+.name_city {
+   color: white;
+}
+
+.weather_day,
+.temp_day,
+.month_day,
+.weekday {
+   color: white;
+}
+
+#black_white_style {
+   padding: 3px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+#black_white_style:hover {
+   background-color: rgba(197, 197, 197, 0.116);
+}
+
+.text_alight_cen {
+   display: flex;
+   align-items: center;
+}
+
+#black_white_style img {
+   width: 30px;
+}
